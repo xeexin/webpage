@@ -1,7 +1,14 @@
-const daysOfWeek = ["mon", "tue", "wed", "thu", "fir", "sat"];
+const player = {
+  name: "heejin",
+  points: 10,
+  fat: false,
+};
 
-console.log(daysOfWeek[0]);
+console.log(player);
+console.log(player.name);
 
-daysOfWeek.push("sun");
+player.name = "HEEJIN";
+console.log(player.name);
 
-console.log(daysOfWeek);
+player.lastName = "LIM";
+console.log(player);
