@@ -1,14 +1,9 @@
 const player = {
-  name: "heejin",
-  points: 10,
-  fat: false,
+  name: "HEEJIN",
+  greeting(name) {
+    console.log("Hello" + name + "nice to meet you");
+  },
 };
 
-console.log(player);
 console.log(player.name);
-
-player.name = "HEEJIN";
-console.log(player.name);
-
-player.lastName = "LIM";
-console.log(player);
+player.greeting("jh");
