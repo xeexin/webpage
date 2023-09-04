@@ -1,9 +1,16 @@
-const player = {
-  name: "HEEJIN",
-  greeting(name) {
-    console.log("Hello" + name + "nice to meet you");
+const calculator = {
+  plus: function (a, b) {
+    return a + b;
+  },
+  minus: function (a, b) {
+    return a - b;
+  },
+  divide: function (a, b) {
+    return a / b;
+  },
+  multi: function (a, b) {
+    return a * b;
   },
 };
 
-console.log(player.name);
-player.greeting("jh");
+console.log(calculator.plus(3, 5));
