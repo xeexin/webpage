@@ -1,11 +1,7 @@
-const a = 6;
-const b = 3;
+const daysOfWeek = ["mon", "tue", "wed", "thu", "fir", "sat"];
 
-let myName = "heejin";
+console.log(daysOfWeek[0]);
 
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
+daysOfWeek.push("sun");
 
-myName = "lim heejin";
-console.log("hello " + myName);
+console.log(daysOfWeek);
