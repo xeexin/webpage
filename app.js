@@ -1,11 +1,17 @@
-const age = parseInt(prompt("How old are you?"));
-
-if (isNaN(age) || age < 0) {
-  console.log("Please Write a positive number");
-} else if (age < 18) {
-  console.log("Your too young");
-} else if (age >= 18 && age <= 70) {
-  console.log("Enjoy");
-} else {
-  console.log("Keep healthy");
+const title = document.querySelector(".hello h1");
+function handleTitleClick() {
+  console.log("clicked");
 }
+
+function handleTitleMouse() {
+  title.style.color = "purple";
+  title.innerText = "Mouse is here";
+}
+
+function handleMouseLeave() {
+  title.innerText = "Mouse  is gone";
+}
+
+title.addEventListener("click", handleTitleClick);
+title.addEventListener("mouseenter", handleTitleMouse);
+title.addEventListener("mouseleave", handleMouseLeave);
