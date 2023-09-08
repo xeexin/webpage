@@ -52,4 +52,5 @@ if (savedToDos !== null) {
   const parsedToDos = JSON.parse(savedToDos);
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
+  toDoForm.classList.remove(HIDDEN_CLASSNAME);
 }

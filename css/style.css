@@ -1,3 +1,5 @@
+@import "variables.css";
+
 .hidden {
   display: none;
 }
@@ -11,7 +13,7 @@ img {
   right: 0px;
   bottom: 0px;
   z-index: -1;
-  opacity: 70%;
+  opacity: 50%;
 }
 
 body {
@@ -20,25 +22,84 @@ body {
 }
 
 #clock {
-  color: rgb(195, 195, 179);
+  color: var(--mainColor);
   font-weight: 900;
   font-size: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: 4px 4px 4px black;
+  text-shadow: 4px 4px 4px var(--subColor);
 }
 
 #login-form input,
 #todo-form input {
   border: none;
-  padding: 7px;
+  padding: 10px;
   border-radius: 20px;
-  background-color: rgb(195, 195, 179);
+  background-color: var(--mainColor);
+  text-align: center;
+}
+#login-form input:focus,
+#todo-form input:focus {
+  outline: 1px solid var(--subColor);
 }
 
-#login-form {
+#login-form,
+#todo-form {
   flex-direction: column;
   margin: 0px 30px;
   text-align: center;
+}
+
+#greeting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mainColor);
+  font-weight: 600;
+  font-size: 70px;
+  text-shadow: 4px 4px 4px var(--subColor);
+}
+
+#todo-list {
+  color: var(--subColor);
+  text-shadow: 4px 4px 4px var(--mainColor);
+  font-size: 20px;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 5px;
+}
+
+#quote {
+  position: absolute;
+  color: var(--subColor);
+  text-shadow: 4px 4px 4px var(--mainColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 15px;
+  bottom: 20px;
+  left: 10px;
+  right: 10px;
+}
+
+#weather {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--mainColor);
+  text-shadow: 4px 4px 4px var(--subColor);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+li button {
+  background: none;
+  border: none;
 }
