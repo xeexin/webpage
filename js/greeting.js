@@ -19,12 +19,6 @@ function paintGreetings(username) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-function handleLinkClick(event) {
-  event.preventDefault();
-  console.dir(event);
-}
-link.addEventListener("click", handleLinkClick);
-
 loginForm.addEventListener("submit", onLoginSubmit);
 
 const savedUserName = localStorage.getItem(USERNAME_KEY);
